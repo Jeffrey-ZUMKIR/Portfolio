@@ -136,8 +136,9 @@ nav ul .dropdown:hover ul{
 }
 
 p{
-	font-size: 1.1em;
+	font-size: 1.05em;
 	margin-top: 10px;
+	font-family: arial;
 }
 
 .imgRef{
