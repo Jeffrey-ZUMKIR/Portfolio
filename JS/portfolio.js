@@ -76,7 +76,12 @@ for (var i = 0; i < arrayTheme.length; i++) {
 		}else{
 			aLiBar.setAttribute("href","../index.html");
 		}*/
-		aLiBar.setAttribute("href","./FR_Intro.html");
+		if(langChecked){
+			aLiBar.setAttribute("href","./FR_Introduction.html");
+		}else{
+			aLiBar.setAttribute("href","./EN_Introduction.html");
+		}
+		
 		aLiBar.innerHTML = arrayTheme[i][0];
 	}
 	liBar.appendChild(aLiBar);
