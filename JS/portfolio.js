@@ -16,7 +16,8 @@ if(langChecked){
 	var arrayProg = [
 		['Ping Fight', 'FR_PingFight.html'],
 		['Liminal Museum', 'FR_LiminalMuseum.html'],
-		['The 4 Suits', 'FR_The4Suits.html']
+		['The 4 Suits', 'FR_The4Suits.html'],
+		['Portal Venture', 'FR_PortalVenture.html']
 	]
 
 	var arrayTheme = [
@@ -40,7 +41,8 @@ if(langChecked){
 	var arrayProg = [
 		['Ping Fight', 'EN_PingFight.html'],
 		['Liminal Museum', 'EN_LiminalMuseum.html'],
-		['The 4 Suits', 'EN_The4Suits.html']
+		['The 4 Suits', 'EN_The4Suits.html'],
+		['Portal Venture', 'EN_PortalVenture.html']
 	]
 	var arrayTheme = [
 		['Home', '#Home'],
