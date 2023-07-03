@@ -16,8 +16,19 @@ if(langChecked){
 	var arrayProg = [
 		['Ping Fight', 'FR_PingFight.html'],
 		['Liminal Museum', 'FR_LiminalMuseum.html'],
-		['The 4 Suits', 'FR_The4Suits.html'],
+		/*['The 4 Suits', 'FR_The4Suits.html'],*/
 		['Portal Venture', 'FR_PortalVenture.html']
+	]
+
+	var arrayUnity = [
+		['Ninja Run Duel', 'FR_NinjaRunDuel.html'],
+		['Liminal Museum', 'FR_LiminalMuseum.html'],
+		['La Tanière', 'FR_LaTaniere.html'],
+		['La balade à Brocéliande', 'FR_BaladeBroceliande.html']
+	]
+
+	var arrayUnreal = [
+		['Portal Venture', 'FR_PortalVenture']
 	]
 
 	var arrayTheme = [
@@ -41,14 +52,16 @@ if(langChecked){
 	var arrayProg = [
 		['Ping Fight', 'EN_PingFight.html'],
 		['Liminal Museum', 'EN_LiminalMuseum.html'],
-		['The 4 Suits', 'EN_The4Suits.html'],
+		/*['The 4 Suits', 'EN_The4Suits.html'],*/
 		['Portal Venture', 'EN_PortalVenture.html']
 	]
 	var arrayTheme = [
 		['Home', '#Home'],
-		['Game Design', '#GD'],
+		/*['Game Design', '#GD'],
 		['Graphics', '#Graph'],
-		['Programming', '#Prog']
+		['Programming', '#Prog']*/
+		['Unity', '#Unity'],
+		['Unreal Engine 4', '#UE4']
 	]
 }
 
@@ -100,9 +113,11 @@ for (var i = 0; i < arrayTheme.length; i++) {
 
 document.getElementById("LI0").classList.add("current");
 
-addPage("UL1","LI1",arrayGD);
+/*addPage("UL1","LI1",arrayGD);
 addPage("UL2","LI2",arrayGraph);
-addPage("UL3","LI3",arrayProg);
+addPage("UL3","LI3",arrayProg);*/
+addPage("UL1", "LI1", arrayUnity);
+addPage("UL2", "LI2", arrayUnreal);
 
 
 function addPage(theUl,theLi,theArray){
