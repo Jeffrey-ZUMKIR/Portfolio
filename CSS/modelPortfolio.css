@@ -39,8 +39,8 @@ html, body{
 .columnInfo {
   	float: left;
   	width: 30%;
-  	border: solid white 3px;
-  	border-style: solid dotted;
+  	/*border: solid white 3px;
+  	border-style: solid dotted;*/
   	padding:0 10px;
 }
 .columnImage {
@@ -58,9 +58,18 @@ html, body{
 .info{
 	padding: 10px 30px;
   	height: 100%;
-  	border-radius: 0 30px;
+  	border-radius: 0 70px;
   	background-color: rgba(255,255,255,0.1);
   	box-shadow: 4px 4px 10px rgba(255,255,255,0.5);
+  	margin-bottom: 20px;
+}
+
+.infoTitre{
+	padding: 10px 30px;
+  	height: 100%;
+  	border-radius: 0 40px;
+  	background-color: rgba(0,0,0,0.3);
+  	box-shadow: 4px 4px 6px rgba(255,255,255,0.5);
   	margin-bottom: 20px;
 }
 
@@ -69,10 +78,13 @@ html, body{
 }
 
 .fond{
-	width: 100%;
+	width: 90%;
 	transition: all 1s ease;
 	border-radius: 0 30px;
 	background-color: rgba(255,255,255,0.2);
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .fond:hover{
@@ -86,7 +98,7 @@ html, body{
 .imgDeco{
 	float: right; 
 	width: 25%; 
-	margin: 10px 0px 10px 10px;
+	margin: 10px 0px 10px 20px;
 }
 
 nav {
@@ -164,10 +176,21 @@ nav ul .dropdown:hover ul{
 }
 
 p{
+	width: 90%; 
+	margin-right: auto; 
+	margin-left: auto;
 	font-size: 0.95em;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-family: arial;
+	line-height: 25px;
+}
+
+h2{
+	width: 90%; 
+	margin-right: auto; 
+	margin-left: auto;
+	margin-top: 20px;
 }
 
 .imgRef{
@@ -211,6 +234,10 @@ p{
 
 span{
 	font-weight: bold;
+}
+
+.highlight{
+	color: #696bff;
 }
 
 @font-face{

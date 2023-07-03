@@ -1,4 +1,5 @@
-var langChecked = document.getElementById("check_lang").checked;
+//var langChecked = document.getElementById("check_lang").checked;
+var langChecked = true;
 
 
 if(langChecked){
@@ -24,18 +25,20 @@ if(langChecked){
 		['Ninja Run Duel', 'FR_NinjaRunDuel.html'],
 		['Liminal Museum', 'FR_LiminalMuseum.html'],
 		['La Tanière', 'FR_LaTaniere.html'],
-		['La balade à Brocéliande', 'FR_BaladeBroceliande.html']
+		['La balade', 'FR_Balade.html']
 	]
 
 	var arrayUnreal = [
-		['Portal Venture', 'FR_PortalVenture']
+		['Portal Venture', 'FR_PortalVenture.html']
 	]
 
 	var arrayTheme = [
 		['Home', '#Home'],
-		['Game Design', '#GD'],
+		/*['Game Design', '#GD'],
 		['Graphisme', '#Graph'],
-		['Programmation', '#Prog']
+		['Programmation', '#Prog'],*/
+		['Unity', '#Unity'],
+		['Unreal Engine 4', '#UE4']
 	]
 }else{
 	var arrayGD = [
@@ -86,11 +89,6 @@ for (var i = 0; i < arrayTheme.length; i++) {
 	if (i!=0) {
 		aLiBar.innerHTML = arrayTheme[i][0]+"<span>&rsaquo;</span>";
 	}else{
-		/*if (document.title == "Home") {
-			aLiBar.setAttribute("href","./index.html");
-		}else{
-			aLiBar.setAttribute("href","../index.html");
-		}*/
 		if(langChecked){
 			aLiBar.setAttribute("href","./FR_Introduction.html");
 		}else{
@@ -127,11 +125,7 @@ function addPage(theUl,theLi,theArray){
 		var newLi = document.createElement("li");
 		theUl3.appendChild(newLi);
 		var newA = document.createElement("a");
-		/*if(document.title == "Home"){
-			newA.setAttribute("href", "./HTML/"+theArray[i][1]);
-		}else{
-			newA.setAttribute("href", "../HTML/"+theArray[i][1]);
-		}*/
+
 		newA.setAttribute("href", "./"+theArray[i][1]);
 		newA.innerHTML = theArray[i][0];
 		newLi.appendChild(newA);
@@ -145,9 +139,6 @@ function addPage(theUl,theLi,theArray){
 }
 
 function changeLang(){
-	/*var currentPage = document.title;
-	var lang = currentPage.substr(0,2);
-	console.log(lang);*/
 	if(langChecked){
 		window.location.href = "EN_"+document.title.split(" ").join("")+".html";
 	}else{
