@@ -26,48 +26,71 @@
 			</div>
 			<div class="info">
 				<h2>Contexte</h2>
-					<p>Ce projet a vu le jour afin de valider mon année de cycle 2 à Ludus Académie 2021-2022 dans l'objectif d'obtenir mon titre de "Développeur de jeux vidéo". Il a débuté fin novembre 2021 et c'est terminé en mai 2022. Ce projet est le résultat de mon <span class="highlight">premier pas</span> sur les moteurs de jeu consécants tels que Unreal Engine 4, je souhaitais me <span class="highlight">dépasser</span> et me lancer un défis. Étant passioné par les <span class="highlight">nouvelles technologies</span>, la réalité Virtuel faisait partie des outils avec lequel je voulais travailler. De là m'est venu l'idée de concevoir une escape game en VR.</p><br/>
+				<img src="../Image/Img_NRD/Player.PNG" class="imgDeco fond">
+					<p>
+						Ce projet est né suite à un projet d'école, nous devions réaliser un jeu vidéo avec un <span class="highlight">aspect compétitif</span>. Pour cela j'ai souhaité changé d'outil de travail et suis passé de Unreal à Unity pour agrandir mon arbre de compétence.
+					</p>
 
-				
-				
-				<h2>Enigmes</h2>
-				<img src="../Image/Img_PortalVenture/Enigme1.PNG" class="imgDeco fond">
 					<p>
-						On peut y retrouver <span class="highlight">3</span> énigmes.
+						Mon but était de pouvoir produire un <span class="highlight">jeu plateformer en multijoueur local avec un style de jeu dynamique</span>. Pour cela, j'ai programmé différente mécanique comme l'utilisation d'un <span class="highlight">grappin</span> ou <span class="highlight">le saut mural</span> tout cela dans un environnement travaillé.
+					</p>
+					<img src="../Image/Img_NRD/Map.PNG" class="fond">
+					<p>
+						Les joueurs s'affrontent un <span class="highlight">1 contre 1</span> dans le but d'être le premier à atteindre 15 points. Le fait de jouez sur un même écran va leur permettre de voir les mouvements de leur adversaires et d'adaptées leur stratégie.
+					</p>
+					<img src="../Image/Img_NRD/Camera.PNG" class="fond">
+					<p>
+						Pour obtenir des points ils vont devoir aller récupérer des rouleaux, il existe <span class="highlight">3</span> types de rouleaux :
 					</p>
 					
-					
-				
 					<p>
-						La <span class="highlight">première énigme</span> est un chaudron dans lequel il faut y plonger des ingrédients pour trouver le bon mélange. A chaque fois qu'on y ajoute un ingrédient, le niveau d'eau monte et lorsqu'il y a 3 ingrédients, le liquide change de couleur pour indiquer si 0,1,2 ou les 3 ingrédients sont correctes. Les joueurs doivent alors tester plusieurs combinaisons pour trouver la bonne formule.
+						Les <span class="highlight">rouleaux uniques</span>, ils apparaissent seuls sur la map, les 2 joueurs doivent aller récupérer le même rouleau. Le rouleau vaut 2 points.
 					</p>
-					<img src="../Image/Img_PortalVenture/Enigme2.PNG" class="imgDeco fond">
-					
 					<p>
-						La <span class="highlight">deuxième énigme</span> est un coffre avec un code à 4 chiffres. Au-dessus du coffre se trouve un tableau dans lequel on peut trouver 4 chiffres imbriquées les uns dans les autres. En entrant les bons chiffres, le coffre se dévérouille et on peut l'ouvrir pour y trouver plus d'ingrédients pour l'énigme 1.
+						Les <span class="highlight">rouleaux jumeaux</span>, ceux-ci apparaissent en duo sur la carte, leur particularité est que lorsque un des rouleaux est récupés, le deuxième disparait. Cela force les joueurs à adapter leur stratégie en fonction de la positon des objectifs et de rapidement se décider sur celui le plus accessible. Le rouleau vaut 2 points.
 					</p>
-					<img src="../Image/Img_PortalVenture/Enigme3.PNG" class="imgDeco fond">
 					<p>
-						Après avoir réussi à produire le mélange nécessaire pour donner de l'énergie au portail, la <span class="highlight">troisème énigme</span> consite à entrer la bonne combinaison de couleur pour réussir à l'allumer. Au-dessus de chaque bouton se trouve un dessin qui forme une constellation. En regardant par la fenêtre, on peut observer des étoiles dans le ciel dont certaines sont de couleur. En retrouvant les constéllations et les couleurs liés à celle-ci, on peut ouvrir le portail.
+						Les <span class="highlight">rouleaux multiples</span>, 5 rouleaux apparaissent sur la carte, les joueurs doivent aller tous les chercher. Ici ils doivent décider de qu'elles sont les objectifs qui sont les plus proches et qu'elles sont ceux qu'ils peuvent contester avec leur adversaire. Le rouleau vaut 1 point.
 					</p>
+					<img src="../Image/Img_NRD/Rouleau.PNG" class="fond">
+				<h2>Travail sur les signes & feedbacks</h2>
+					<p>
+						L'objectif du projet était de réaliser un <span class="highlight">jeu en version gold</span>, donc un jeu proche d'une version finale. Afin d'arriver à ça, j'ai beaucoup travaillé sur les signes et feedbacks.
+					</p>
+					<p>
+						Tout d'abord différentes animations pour mon personnage en fonction de l'état dans lequel il se trouve.
+					</p>
+					<div class="divImg">
+						<img src="../Image/Img_NRD/IdleP.gif" class="imgShow">
+						<img src="../Image/Img_NRD/RunP.gif" class="imgShow">
+						<img src="../Image/Img_NRD/JumpP.gif" class="imgShow">
+						<img src="../Image/Img_NRD/FallP.gif" class="imgShow">
+						<img src="../Image/Img_NRD/SlideP.gif" class="imgShow">
+					</div>
+					<p>
+						J'ai ensuite rajouter de nombreux effets pour les différentes actions du joueur pour continuer de rendre plus vivant mon univers (chacuns de ces exemples a été ralenti pour le bon visionnement des effets).
+					</p>
+					<div class="divImg">
+						<img src="../Image/Img_NRD/Run.gif" class="imgShow">
+						<img src="../Image/Img_NRD/Jump.gif" class="imgShow">
+						<img src="../Image/Img_NRD/DblJump.gif" class="imgShow">
+						<img src="../Image/Img_NRD/Fall.gif" class="imgShow">
+						<img src="../Image/Img_NRD/Aim.gif" class="imgShow">
+						<img src="../Image/Img_NRD/Shoot.gif" class="imgShow">
+						<img src="../Image/Img_NRD/Swing.gif" class="imgShow">
+						<img src="../Image/Img_NRD/WallJump.gif" class="imgShow">
+						<img src="../Image/Img_NRD/Slide.gif" class="imgShow">
+					</div>
 				<br/>
-				<h2>Conclusion</h2>
-					<p>
-						Le jeu avait réussi à créer une réel immersion des joueurs, à l'aide de la fonctionnalités "the void" et le fait de ne pas être embêté par des cables, certains joueurs n'osaient pas marcher sur des objets ou faisait le tour du chaudron pour ne pas passer au travers. Malgré le fait qu'il était possible de prendre des objets dans le coffre même si celui-ci était fermé, cette idée n'était pas venu à l'esprit des joueurs et ils ont pu passé une bonne expérience.
-						Le projet a été très bénéfique pour moi, j'ai appris énormémement de chose au développement à l'aide de ce jeu et celui-ci m'avait motivés à développer beaucoup d'autres projets.
-					</p>
+				
 			</div>
 			<div class="info">
-				<h2>Video gameplay</h2>
-				<br/>
-				<video controls width="100%">
-					<source src="../Image/Img_portalVenture/Portal_Venture.mp4" type="video/mp4">
-				</video>
-				<br/>
-				<br/>
+				<h2>Conclusion</h2>
+					<p>
+						Le jeu a réussi a crer un réel aspect compétitif, plusieurs c'était entrainé avant un tournoi organisé pour tester dans de réel condition le projet, il a réussi a être apprécié par de nombreux élèves et beaucoup souhaite en voir plus.
+						Le jeu peut encore être amélioré avec un meilleur travail de certaine mécanique et la création de nouvelle maps. Mais on peut aussi envisager de nouveau mode de jeu comme du contre-la-montre ou encore même un mode histoire, ce projet a encore beaucoup du potentiel et il ne restera pas trop longtemps dans le tiroir.
+					</p><br/>
 			</div>
-			
-
 		</div>
 		<div class="column1">
 			<!--<div class="toggle">
@@ -75,9 +98,9 @@
 		      	<label for="" class="onbtn">FR</label>
 		      	<label for="" class="ofbtn">EN</label>
 		    </div><br/><br/>-->
-			<a href="mailto:jeffrey1@hotmail.be">
-				<img id="adresseOutlook" src="../Image/Icone_Outlook.png" class="imgRef" title="jeffrey1@hotmail.be">
-			</a>
+			<h3>Contact</h3>
+			<p>jeffrey.zu@ludus-academie.com</p>
+			<p>06 37 49 66 67</p>
 		</div>
 	</div>
 

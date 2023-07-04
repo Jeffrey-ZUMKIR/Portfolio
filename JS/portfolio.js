@@ -23,7 +23,6 @@ if(langChecked){
 
 	var arrayUnity = [
 		['Ninja Run Duel', 'FR_NinjaRunDuel.html'],
-		['Liminal Museum', 'FR_LiminalMuseum.html'],
 		['La Tanière', 'FR_LaTaniere.html'],
 		['La balade', 'FR_Balade.html']
 	]
@@ -38,7 +37,7 @@ if(langChecked){
 		['Graphisme', '#Graph'],
 		['Programmation', '#Prog'],*/
 		['Unity', '#Unity'],
-		['Unreal Engine 4', '#UE4']
+		['UE4', '#UE4']
 	]
 }else{
 	var arrayGD = [
@@ -54,7 +53,6 @@ if(langChecked){
 
 	var arrayProg = [
 		['Ping Fight', 'EN_PingFight.html'],
-		['Liminal Museum', 'EN_LiminalMuseum.html'],
 		/*['The 4 Suits', 'EN_The4Suits.html'],*/
 		['Portal Venture', 'EN_PortalVenture.html']
 	]
@@ -64,7 +62,7 @@ if(langChecked){
 		['Graphics', '#Graph'],
 		['Programming', '#Prog']*/
 		['Unity', '#Unity'],
-		['Unreal Engine 4', '#UE4']
+		['UE4', '#UE4']
 	]
 }
 
